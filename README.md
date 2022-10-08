@@ -1,0 +1,2 @@
+Um programa simples que encripta e decripta arquivos usando AES256 e apaga os arquivos originais usando shred para ter mais segurança.
+> O arquivo send_to.rs é feito para ser usado no shell:SendTo do windows.
