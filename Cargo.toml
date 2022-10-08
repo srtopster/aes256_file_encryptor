@@ -1,0 +1,18 @@
+[package]
+name = "file_encryption_rewrite"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+[[bin]]
+name = "send_to"
+path = "src/send_to.rs"
+
+[dependencies]
+inquire = "0.4.0"
+magic-crypt = {git="https://github.com/srtopster/rust-magiccrypt"}
+file_shred = "1.1.0"
