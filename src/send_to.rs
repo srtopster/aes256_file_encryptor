@@ -80,7 +80,7 @@ fn main() {
         for file in file_list {
             if !file.is_file() {
                 continue;
-            }else if file.extension().unwrap() == "cry" {
+            }else if file.to_string_lossy().ends_with("cry") {
                 continue;
             }
             print!("Encriptando: {}",file.file_name().unwrap().to_string_lossy());
